@@ -7,6 +7,7 @@ typedef tuple<ll,ll,ll> T;
 const long long INF = 1LL<<60;
 const int MOD = 1000000000+7;
 #define rev(s) (string((s).rbegin(), (s).rend()))
+template < typename T > inline string toString( const T &a ) { ostringstream oss; oss << a; return oss.str(); };
 // cout << fixed << setprecision(10) << ans << endl; 有効桁数指定
 // *min_element(c + l, c + r) *max_element(c + l, c + r) 配列の中のmin-max
 // int dx[8]={1,1,0,-1,-1,-1,0,1};

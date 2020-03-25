@@ -14,5 +14,5 @@ long long modpow(long long a, long long n, long long mod) {
 
 int main() {
     // 3^45 mod. 1000000007 を計算してみる
-    cout << modpow(3, 45, 1000000007) << endl;
+    cout << modpow(3, 2, 1000000007) << endl;
 }

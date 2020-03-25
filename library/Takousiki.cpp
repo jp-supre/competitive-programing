@@ -475,19 +475,27 @@ struct MathsNTTModAny {
 		return res;
 	}
 };
-/*---------------------------------------------------------------------------------------------------
-　　　　　　　　　　　 ∧＿∧
-　　　　　 ∧＿∧ 　（´<_｀ ）　 Welcome to My Coding Space!
-　　　　 （ ´_ゝ`）　/　 ⌒i     @hamayanhamayan
-　　　　／　　　＼　 　  |　|
-　　　 /　　 /￣￣￣￣/　　|
-　 ＿_(__ﾆつ/　    ＿/ .| .|＿＿＿＿
-　 　　　＼/＿＿＿＿/　（u　⊃
----------------------------------------------------------------------------------------------------*/
 
 
 
+const ll MOD = 1000000000+7;
 
+mint pow(mint m,ll n){
+    if(n==0)return 1;
+    else if(n%2==0){
+        mint x=pow(m,n/2);
+        return x*x;
+    }else{
+        return m*pow(m,n-1);
+    }
+}
+mint rev(mint m){
+    return pow(m,MOD-2);
+}
+ 
+mint fact(ll a){
+    return a?fact(a-1)*a:1;
+}
 
 
 
