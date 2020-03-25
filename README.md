@@ -32,11 +32,9 @@ https://atcoder.jp/contests/arc005/tasks/arc005_3
 
 cost(gx,gy)<=2ならok
 
-<details><summary>コード</summary>
-
+<details><summary>コード</summary><div>
+    
 ```
-<details><summary>クリックすると展開されます</summary>
-​```
 #include <bits/stdc++.h>
 #define rep(i,n)for(int i=0;i<(n);i++)
 using namespace std;
@@ -102,78 +100,12 @@ int main() {
     }
 
 }
-​```
-</details>
+
 ```
 
-
-```c++
-#include <bits/stdc++.h>
-#define rep(i,n)for(int i=0;i<(n);i++)
-using namespace std;
-typedef long long ll;
-typedef pair<int,int> P;
-const long long INF = 1LL<<60;
-#define rev(s) (string((s).rbegin(), (s).rend()))
-
-int h,w,sy,sx,gy,gx;;
-const int inf = 300000;
-vector<string> field(510);
-int dx[] = {1,0,-1,0};
-int dy[] = {0,1,0,-1};
-vector<vector<int>> cost(510,vector<int>(510,inf));
-
-void bfs() {
-    int cs;
-    queue<P> q;
-    q.push(P(sy,sx));
-    cost[sy][sx]=0;
-    while (q.size()) {
-        P pa = q.front();q.pop();
-        rep(i,4) {
-            int ny = pa.first+dy[i];
-            int nx = pa.second+dx[i];
-            if (ny>=0&&ny<h&&nx>=0&&nx<w) {
-                if (field[ny][nx]=='#') {
-                    cs=1;
-                }
-                else {
-                    cs=0;
-                }
-                if (cost[ny][nx]>cost[pa.first][pa.second]+cs) {
-                    cost[ny][nx]=cost[pa.first][pa.second]+cs;
-                    q.push(P(ny,nx));
-                }
-            }
-        }
-    }
-}
+</div></details>
 
 
-int main() {
-    cin>>h>>w;
-    rep(i,h) {
-        cin>>field[i];
-    }
-    rep(i,h) {
-        rep(j,w) {
-            if (field[i][j]=='s') {
-                sy=i;sx=j;
-            }if (field[i][j]=='g') {
-                gy=i;gx=j;
-            }
-        }
-    }
-    bfs();
-    if (cost[gy][gx]<=2) {
-        cout<<"YES"<<endl;
-    }
-    else {
-        cout<<"NO"<<endl;
-    }
-
-}
-```
 
 https://atcoder.jp/contests/agc043/tasks/agc043_a
 
