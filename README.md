@@ -33,7 +33,7 @@ https://atcoder.jp/contests/arc005/tasks/arc005_3
 cost(gx,gy)<=2ならok
 
 <details><summary>コード</summary><div>
-    
+
 ```
 #include <bits/stdc++.h>
 #define rep(i,n)for(int i=0;i<(n);i++)
