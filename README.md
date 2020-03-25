@@ -21,6 +21,7 @@ n個の点それぞれの、道路のrootと鉄道のrootを出して、mapで�
 
 
 #### BFS
+<details><summary></summary>
 
 幅優先探索
 
@@ -112,4 +113,6 @@ int main() {
 https://atcoder.jp/contests/agc043/tasks/agc043_a
 
 上の問題の応用
+
+</details>
 
