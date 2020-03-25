@@ -1,6 +1,7 @@
 # competitive-programing
+#### UnionFind
 
-#### Union Find
+<details><summary></summary>
 
 最初n個の無関係な点を関係性ごとにつないでいける
 
@@ -14,11 +15,13 @@ n個の点それぞれの、道路のrootと鉄道のrootを出して、mapで�
 
 出現回数を数える
 
+</details>
 
 
 
 
 #### BFS
+<details><summary></summary>
 
 幅優先探索
 
@@ -110,4 +113,6 @@ int main() {
 https://atcoder.jp/contests/agc043/tasks/agc043_a
 
 上の問題の応用
+
+</details>
 
