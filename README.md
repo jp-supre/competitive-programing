@@ -1,6 +1,7 @@
 # competitive-programing
+#### UnionFind
 
-#### Union Find
+<details><summary></summary>
 
 最初n個の無関係な点を関係性ごとにつないでいける
 
@@ -14,6 +15,7 @@ n個の点それぞれの、道路のrootと鉄道のrootを出して、mapで�
 
 出現回数を数える
 
+</details>
 
 
 
